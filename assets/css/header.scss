@@ -1,0 +1,72 @@
+header{
+    .header-wrapper{
+        @media(max-width:992px){
+            border-bottom:1px solid #EAEAEA;
+            padding: 23px 0;
+        }
+        @media(max-width:576px){
+            padding: 13px 0;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 0;
+        position: relative;
+        .menu-search-area{
+            display: flex;
+            align-items: center;
+            div{
+                margin-right: 28px;
+                @media(max-width:576px){
+                    margin-right: 12px;
+                }
+                cursor: pointer;
+                &.language{
+                    height: 28px;
+                    width: 28px;
+                    background-color: $secondary-color2;
+                    border-radius: 50%;
+                    display: flex;
+                    @media(max-width:576px){
+                        height: 18px;
+                        width: 18px;
+                        margin-right: 0;
+                    }
+                }
+                &.menu-trigger{
+                    @media(max-width:992px){
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                img{
+                    @media(max-width:576px){
+                        width: 22px;
+                    }
+                }
+            }
+        }
+        .logo{
+            @media(max-width:992px){
+                order: -1;
+                width: 100%;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    img{
+                        @media(max-width:992px){
+                            width: 200px;
+                            position: relative;
+                            left: 30px;
+                            @media(max-width:576px){
+                                left: 10px;
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
